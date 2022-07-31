@@ -9,7 +9,7 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: "./src/index.html"
+            template: "./index.html"
         })
     ],
     module: {
