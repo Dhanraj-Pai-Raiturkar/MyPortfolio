@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Lobster&family=Merriweather&family=PT+Sans:ital@1&family=Roboto+Condensed:wght@300&family=Roboto+Flex:opsz@8..144&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&family=Work+Sans:wght@200&display=swap');
+@import '../../scss/common.scss';
+@import '../../scss/_reset.scss';
+
+.header-container {
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    height: 3rem;
+    @include flexBox(row, center);
+    background-color: #547974;
+    li{
+        // @include flexBox(row, center);
+        display: inline;
+        padding: 0rem 0.3rem;
+        font-weight: 200;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        color: whitesmoke;
+        letter-spacing: 0.05rem;
+        vertical-align: baseline;
+
+        a{
+            text-decoration: none;
+            color: whitesmoke;  
+            &:focus{
+                border-bottom: 3px solid white;
+                outline: none;
+            }
+            &:hover{
+                border-bottom: 3px solid white;
+            }
+            padding: 0.7rem 1rem;
+        }
+    }
+}
+
+.active{
+    border-bottom: 3px solid white;
+}
+
+
+@media only screen and (max-width:'500px') and (min-width:'300px') {
+
+}

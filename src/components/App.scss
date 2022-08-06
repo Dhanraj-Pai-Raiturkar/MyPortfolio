@@ -2,6 +2,12 @@
 @import url('../scss/_reset.scss');
 
 .app {
-    background-color: #474747;
     height: 100vh;
+    width: 100vw;
+}
+
+html, body {
+    min-height: 100%;
+    background-color: rgb(58, 58, 58);
+    overflow-x: hidden;
 }
